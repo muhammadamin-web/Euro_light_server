@@ -1,0 +1,26 @@
+nav {
+
+    background-color: rgba(0, 0, 0, 0.9) !important;
+
+}
+.product_pag_service{
+font-weight: normal;
+font-size: 35px;
+padding-bottom: 40px;
+}
+.container_product{
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-top: 100px;
+}
+@media (max-width: 585px) {
+    .product_pag_service{
+        font-size: 30px;
+        padding-bottom: 30px;
+        }
+        .container_product{
+            width: 80%;
+            margin-left: 10%;
+            /* margin-top: 40px; */
+        }
+}

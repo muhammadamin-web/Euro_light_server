@@ -1,0 +1,122 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap');
+
+.design_photo {
+    width: 50%;
+    height: 100vh;
+}
+
+.design_photo_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.design_block {
+    /* gap: 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.design_block_right{
+    flex-direction: row-reverse;
+
+}
+.design_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+    padding-left: 100px;
+}
+.design_title {
+    font-size: 30px;
+    width: 83%;
+    font-weight: 600;
+    font-family: 'Roboto';
+    padding-bottom: 50px;
+}
+.border_button {
+    width: 20%;
+    border-bottom: 3px solid black;
+}
+.design_content_block_card {
+    width: 70%;
+    gap: 10%;
+    display: flex;
+    padding-top: 50px;
+}
+.design_content_text {
+    font-family: 'Inter';
+    color: #2a2a2b;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.design_content2 {
+    padding-left: 30px;
+}
+.interier_more{
+    color: black;
+    margin-top: 0px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 600;
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    border-bottom: 1px solid transparent; /* Dastlabki holatda ko'rinmas chegarani yaratadi */
+    text-decoration: none;
+
+}
+.interier_more::after{
+    content: ''; /* Zarur, lekin ko'rinmaydigan mazmun */
+    position: absolute; /* Asosiy elementga nisbatan mutlaq pozitsiyalash */
+    left: 0;
+    bottom: -1px; /* Chegara pastda joylashishi uchun */
+    width: 0; /* Dastlabki holatda ko'rinmas */
+    height: 1px; /* Chegara qalinligi */
+    background-color: black; /* Chegara rangi */
+    transition: width 0.3s ease; /* Kengayish effekti uchun o'tish */
+}
+.interier_more:hover{
+    text-decoration: none;
+
+color: black;
+}
+.interier_more:hover::after {
+    width: 100%; /* Sichqoncha ustiga olib kelganda to'liq kenglikka cho'ziladi */
+}
+@media (max-width: 895px) {
+
+.design_photo {
+    width: 100%;
+    height: 50vh;
+}
+.design_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;    
+    padding-left: 50px;
+    height: 50vh;
+    padding-top: 25px;
+}
+.design_block {
+    /* gap: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.design_title{
+    padding-bottom: 25px;
+    font-size: 25px;
+}
+.design_content_block_card{
+    padding-top: 25px;
+}
+.interier_more{
+margin-top: 0px;
+top: 30px;
+
+}
+}
